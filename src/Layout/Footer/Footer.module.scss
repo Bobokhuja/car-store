@@ -1,0 +1,19 @@
+.Footer {
+  background-color: #222;
+  color: #fff;
+}
+
+.FooterWrapper {
+  max-width: 1170px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
