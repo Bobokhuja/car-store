@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation'
 import classes from './Header.module.scss'
 
 const links = [
-  {address: '/home', name: 'Home'},
+  {address: '/', name: 'Home'},
   {address: '/cars', name: 'Cars'},
   {address: '/contacts', name: 'Contacts'},
   {address: '/about', name: 'About Us'}
