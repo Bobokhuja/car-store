@@ -1,0 +1,24 @@
+.LogoWrapper {
+  max-width: 100px;
+  height: auto;
+}
+
+.LogoLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.LogoName {
+  font-size: 20px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Logo {
+  max-width: 100%;
+  margin-right: 15px;
+}
