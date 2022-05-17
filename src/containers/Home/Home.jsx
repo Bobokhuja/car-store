@@ -1,4 +1,4 @@
-import Cars from '../Cars/Cars'
+// import Cars from '../Cars/Cars'
 import classes from './Home.module.scss'
 
 const Home = props => {

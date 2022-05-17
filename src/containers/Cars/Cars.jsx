@@ -1,26 +1,55 @@
 import React, {Component} from 'react'
-import classes from './Car.module.scss'
+import classes from './Cars.module.scss'
 import Car from './Car/Car'
 class Cars extends Component {
 
   state = {
     cars: [
-      {name: 'Ford', year: 2018},
-      {name: 'Ferrari', year: 2016},
-      {name: 'Porsche', year: 2014},
+      {
+        name: 'Ford', 
+        year: 2018,
+        date: '2022-17-5'
+      },
+      {
+        name: 'Ferrari', 
+        year: 2016,
+        date: '2022-17-5'
+      },
+      {
+        name: 'Porsche', 
+        year: 2014,
+        date: '2022-17-5'
+      },
+      {
+        name: 'Lamborghini', 
+        year: 2022,
+        date: '2022-17-5'
+      },
+      {
+        name: 'Zhiguli', 
+        year: 1120,
+        date: '2022-17-5'
+      },
     ]
   }
 
-  ele = this.state.cars.map((car, index) => (
-    <Car name={car.name} key={index} />
+  getCars(counts) {
+    
+  }
+
+  elem = this.state.cars.map(({name, year, date}, index) => (
+    <Car date={date} name={name} year={year} key={index}>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error atque laboriosam sit magni in quis. Perferendis mollitia repudiandae reiciendis fugit cum ab magni inventore velit.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam.</p>
+    </Car>
   ))
 
   render() {
+    this.getCars()
     return (
-    <>
-    <h1>{this.props.title}</h1>
-      {this.ele}
-    </>
+      <div className={classes.Cars}>
+        {this.elem}
+      </div>
     )
   }
 }

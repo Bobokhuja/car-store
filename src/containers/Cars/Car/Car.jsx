@@ -1,20 +1,20 @@
 import classes from './Car.module.scss'
-import {Card, Button} from 'react-bootstrap';
-// import { Button } from 'react-bootstrap/Button';
 
 const Car = props => {
   return (
-  <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="holder.js/100px180" />
-    <Card.Body>
-      <Card.Title>{props.name}</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk of
-        the card's content.
-      </Card.Text>
-      <Button variant="primary">Go somewhere</Button>
-    </Card.Body>
-  </Card>
+    <div className={classes.Car}>
+      <h2 className={classes.Title}>{props.name}</h2>
+      <p>
+        <strong>Year: </strong>{props.year}
+      </p>
+      <div className={classes.CarDescription}>
+        {props.children}
+      </div>
+      <footer className={classes.Footer}>
+        <button className={classes.Button}>Show more</button>
+        <time className={classes.Time} datatime={props.date}>{props.date.split('-').reverse().join('.')}</time>
+      </footer>
+    </div>
   )
 }
 
