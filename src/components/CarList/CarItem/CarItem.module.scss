@@ -1,0 +1,51 @@
+.Car {
+  flex-grow: 1;
+  max-width: 350px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 15px 2px rgba(200, 200, 200, .9);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 25px 20px;
+  transition: all, .3s;
+  margin: 20px;
+
+  &:hover {
+    box-shadow: 2px 2px 20px 5px rgba(50, 50, 50, .5);
+    transform: scale(1.03);
+  }
+}
+
+.Title {
+  margin-top: 0;
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.Time {
+  color: #888;
+}
+
+.Button {
+  padding: 10px 15px;
+  background: #0077b6;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  transition: all, .3s;
+  border: 3px solid #fff;
+  
+  &:hover {
+    border: 3px solid #90e0ef;
+  }
+
+  &:active, &:focus {
+    border: 3px solid #00b4d8;
+    background: #023e8a;
+  }
+}

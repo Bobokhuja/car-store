@@ -12,10 +12,10 @@ class App extends Component {
       <BrowserRouter>
         <Header />
         <Main>
-        <Routes>
-          <Route path="/" element={<Home title={'New Cars'} />} />
-          <Route path="/cars" element={<Cars title={'Cars list'} />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home title={'New Cars'} />} />
+            <Route path="/cars" element={<Cars title={'Cars list'} />} />
+          </Routes>
         </Main>
         <Footer />
       </BrowserRouter>

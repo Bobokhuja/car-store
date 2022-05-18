@@ -1,8 +1,9 @@
-import React, {Component} from 'react'
+// import Cars from '../Cars/Cars'
 import classes from './Cars.module.scss'
-import Car from './Car/Car'
-class Cars extends Component {
+import CarList from '../../components/CarList/CarList'
+import { Component } from 'react'
 
+class Cars extends Component {
   state = {
     cars: [
       {
@@ -33,22 +34,10 @@ class Cars extends Component {
     ]
   }
 
-  getCars(counts) {
-    
-  }
-
-  elem = this.state.cars.map(({name, year, date}, index) => (
-    <Car date={date} name={name} year={year} key={index}>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error atque laboriosam sit magni in quis. Perferendis mollitia repudiandae reiciendis fugit cum ab magni inventore velit.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam.</p>
-    </Car>
-  ))
-
   render() {
-    this.getCars()
     return (
-      <div className={classes.Cars}>
-        {this.elem}
+      <div className={classes.Home}>
+        <CarList count={this.state.cars.length} cars={this.state.cars} />
       </div>
     )
   }
